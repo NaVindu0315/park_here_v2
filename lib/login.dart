@@ -146,6 +146,55 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         SizedBox(height: 20),
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 16.0, horizontal: 32.0),
+                          decoration: BoxDecoration(
+                            color: Color(0xFFFFD101),
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "didnt sign up yet? ",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16.0,
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => sign()),
+                                  );
+                                  //  Navigator.pushNamed(context, gemifysign.id);
+                                  // Add your sign up button onPressed code here
+                                },
+                                child: Text(
+                                  'sign up ',
+                                  style: TextStyle(
+                                    color: Colors.green,
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold,
+                                    //decoration: TextDecoration.underline,
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                " Now ",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                         Align(
                           alignment: Alignment.bottomCenter,
                           child: Container(

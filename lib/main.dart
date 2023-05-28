@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:park_here_v2/login.dart';
 import 'package:park_here_v2/signup.dart';
 import 'firebase_options.dart';
 
@@ -55,7 +56,7 @@ class _homeState extends State<home> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => sign()),
+                      MaterialPageRoute(builder: (context) => lgin()),
                     );
                   },
                   child: Text(
